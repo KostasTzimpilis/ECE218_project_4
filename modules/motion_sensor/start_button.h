@@ -1,19 +1,25 @@
 //=====[#include guards - begin]===============================================
 
-#ifndef _MOTION_SENSOR_H_
-#define _MOTION_SENSOR_H_
+
+#ifndef _START_BUTTON_H_
+#define _START_BUTTON_H_
+
 
 //=====[Declaration of public defines]=========================================
 
+
 //=====[Declaration of public data types]======================================
+
 
 //=====[Declarations (prototypes) of public functions]=========================
 
-void motionSensorInit();
-bool motionSensorRead();
-void motionSensorActivate();
-void motionSensorDeactivate();
+
+void startButtonInit();
+void startButtonUpdate();
+bool startButtonRead();
+
 
 //=====[#include guards - end]=================================================
 
-#endif // _MOTION_SENSOR_H_
+
+#endif // _START_BUTTON_H_
