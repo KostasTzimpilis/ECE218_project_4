@@ -1,13 +1,10 @@
-//=====[Libraries]=============================================================
+#include "mbed.h"
+#include "microwave_system.h"
 
-#include "smart_home_system.h"
-
-//=====[Main function, the program entry point after power on or reset]========
-
-int main()
-{
-    smartHomeSystemInit();
+int main() {
+    microwaveSystemInit();
+    
     while (true) {
-        smartHomeSystemUpdate();
+        microwaveSystemRun();
     }
 }
