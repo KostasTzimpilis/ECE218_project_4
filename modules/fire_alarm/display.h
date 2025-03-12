@@ -1,7 +1,7 @@
 //=====[#include guards - begin]===============================================
 
-#ifndef _FIRE_ALARM_H_
-#define _FIRE_ALARM_H_
+#ifndef _DISPLAY_H_
+#define _DISPLAY_H_
 
 //=====[Declaration of public defines]=========================================
 
@@ -9,16 +9,12 @@
 
 //=====[Declarations (prototypes) of public functions]=========================
 
-void fireAlarmInit();
-void fireAlarmUpdate();
-void fireAlarmDeactivate();
+void displayInit( void );
+ 
+void displayCharPositionWrite( uint8_t charPositionX, uint8_t charPositionY );
 
-bool gasDetectorStateRead();
-bool gasDetectedRead();
-
-bool overTemperatureDetectorStateRead();
-bool overTemperatureDetectedRead();
+void displayStringWrite( const char * str );
 
 //=====[#include guards - end]=================================================
 
-#endif // _FIRE_ALARM_H_
+#endif // _DISPLAY_H_
