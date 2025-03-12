@@ -1,21 +1,26 @@
 //=====[#include guards - begin]===============================================
 
-#ifndef _INTRUDER_ALARM_H_
-#define _INTRUDER_ALARM_H_
+
+#ifndef _SIREN_H_
+#define _SIREN_H_
+
 
 //=====[Declaration of public defines]=========================================
 
+
 //=====[Declaration of public data types]======================================
+
 
 //=====[Declarations (prototypes) of public functions]=========================
 
-void intruderAlarmInit();
-void intruderAlarmUpdate();
-void intruderAlarmDeactivate();
 
-bool intruderDetectorStateRead();
-bool intruderDetectedRead();
+void sirenInit();
+bool sirenStateRead();
+void sirenStateWrite( bool state );
+void sirenUpdate( int strobeTime );
+
 
 //=====[#include guards - end]=================================================
 
-#endif // _INTRUDER_ALARM_H_
+
+#endif // _SIREN_H_
